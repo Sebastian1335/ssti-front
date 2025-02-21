@@ -1,0 +1,70 @@
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
+    background-color: #e6e0f8;
+    overflow-x: hidden;
+}
+
+.admin-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.admin-title {
+    color: #5d3ebc;
+    margin-bottom: 1rem;
+}
+
+/* Contenedor con scroll horizontal */
+.admin-table-container {
+    width: 100%;
+    overflow-x: auto; /* Permite scroll si la tabla es muy ancha */
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Evita que las columnas se compriman demasiado */
+}
+
+.admin-table th, .admin-table td {
+    padding: 10px;
+    border: 1px solid #c9b6fc;
+    text-align: left;
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+}
+
+.admin-table th {
+    background-color: #9370db;
+    color: white;
+}
+
+.admin-table tbody tr:nth-child(even) {
+    background-color: #f3efff;
+}
+
+.admin-table tbody tr:hover {
+    background-color: #d5c4ff;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .admin-box {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .admin-table th, .admin-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
